@@ -9,9 +9,9 @@ using System.Text.RegularExpressions;//libreria necesaria para trabajar con expr
 namespace proyecto_teoria
 {
 
-    class Program
+    public class Program
     {
-        static void Main(string[]args)
+        public static void Main(string[]args)
         {
             string texto="la casa blanca";
             string exp="casa";
@@ -20,7 +20,7 @@ namespace proyecto_teoria
 
             foreach (Match e in encontrado)
             {
-                Console.ReadLine();//fucion de salida del resultado para la consola
+                Console.ReadLine(e);//fucion de salida del resultado para la consola
             }
             Console.WriteLine("-------------");//fucion de salida para la consola
 
