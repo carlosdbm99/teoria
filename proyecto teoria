@@ -9,13 +9,13 @@ using System.Text.RegularExpressions;//libreria necesaria para trabajar con expr
 namespace proyecto_teoria
 {
 
-    class Program
+    public class Program
     {
-        static void Main(string[]args)
+        public static void Main(string[]args)
         {
             string patron;
-            patron = " [0-9]+ ";//string para insertar la expresion regular en la funcion de la linea 19
-            string[] cadena = { "a1b2b3d" };//cadena a la cual se va a ver afectada opor la funcion
+            patron = "[0-9]+";//string para insertar la expresion regular en la funcion de la linea 19
+            string[] cadena = { "uno1dos2tres3cuatro" };//cadena a la cual se va a ver afectada opor la funcion
             foreach (string texto in cadena)
                 Console.WriteLine(Regex.Replace(texto, patron, "\n"));//funcion para reemplazar los caracteres que se encuentran en la expresion regular por saltos de linea en la cadena
             Console.ReadLine();//fucion de salida para la consola
